@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #f4f4f4;
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     color: #222;
-    padding: 30px;
 }
 
 header {
@@ -16,13 +16,13 @@ header {
     align-items: center;
     background: white;
     padding: 25px 35px;
-    border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     margin: 0 0 35px 0;
 }
 
 .box1,
 .box2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -38,11 +38,11 @@ header {
 
 .box1 span, .box2 span {
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .box1 h1 {
-    font-size: 42px;
+    font-size: 52px;
 }
 
 .box2 h3 {
@@ -54,6 +54,31 @@ header {
     font-weight: normal;
 }
 
+.Stats{
+    margin: -40px 0 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stat-card{
+    background-color: white;
+    width: 20%;
+    height: 150px;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 main {
     max-width: 900px;
     margin: auto;
@@ -61,6 +86,15 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 35px;
+}
+
+.tag{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price::before {
+    content: " \20B9 ";
 }
 
 .vip,
@@ -71,21 +105,21 @@ main {
     gap: 12px;
     padding: 25px;
     border-radius: 15px;
-    background: white;
+    background: rgb(255, 255, 255)
 }
 
 .vip {
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     border-top: 5px solid #d4af37;
 }
 
 .premium {
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     border-top: 5px solid #777;
 }
 
 .regular {
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     border-top: 5px solid #333;
 }
 
@@ -102,9 +136,19 @@ main {
     cursor: pointer;
 }
 
+.seats {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .seat:hover {
-    background: #333;
-    color: white;
-    border-color: #333;
+    background: rgb(252, 116, 254);
+    color: rgb(75, 31, 31);
+    border-color: rgb(252, 116, 254);
     transform: translateY(-3px);
 }
