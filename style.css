@@ -497,9 +497,6 @@ main {
   backdrop-filter: blur(8px)
 }
 
-.cover-icon {
-  font-size: 32px
-}
 
 .event-body {
   padding: 19px
